@@ -1,0 +1,1 @@
+print("Sum of Given Numbers is: ",bin(0o25+0x39))

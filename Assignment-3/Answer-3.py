@@ -1,0 +1,1 @@
+print("Character Representation of Unicode 100 is: ",chr(100))

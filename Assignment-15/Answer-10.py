@@ -1,0 +1,1 @@
+print(type(int(input("Enter a Number: "))))

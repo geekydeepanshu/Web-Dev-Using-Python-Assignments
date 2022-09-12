@@ -1,0 +1,1 @@
+print("Sum of given numbers is: ",int(input("Enter two Numbers:"))+int(input()))

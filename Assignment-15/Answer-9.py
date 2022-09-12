@@ -1,0 +1,1 @@
+print("Given String Contain Only alphabets") if input("Enter a String: ").isalpha() else print("Given String Could not Contain Only alphabets")

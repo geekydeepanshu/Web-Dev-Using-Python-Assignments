@@ -1,0 +1,1 @@
+Keywors which can be  used as data in python script are : False, True, None
