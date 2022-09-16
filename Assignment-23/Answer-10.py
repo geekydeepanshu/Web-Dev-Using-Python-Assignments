@@ -1,16 +1,18 @@
-def coPrime_hcf(hcf):
-    def coPrime(a,b):
-        if hcf(a,b)==1:
-            print("Co-Prime Numbers")
-        else:
-            print("Not Co-Prime Numbers")
-            return hcf(a,b)
-    return coPrime_hcf
-@coPrime_hcf
-def hcf(a,b):
-    c=a if a>b else b
-    for e in range(c,0,-1):
-            if a%e==0 and b%e==0:
-                return e
+#Define a function which calculates HCF of two numbers. Define and apply a decorator to check whether two given numbers are co-prime or not.
 
-print("HCF of given Numbers is: ",hcf(2,4))
+def decorator_CoPrimeChecker(hcf):
+    def CoPrimeCheck(a,b):
+        if hcf(a,b)==1:
+            print("Given Numbers Are Co-Prime")
+        else:
+            print("Hcf of {} and {} is {} ".format(a,b,hcf(a,b)))
+    return CoPrimeCheck
+@decorator_CoPrimeChecker
+def hcf(frist_number,second_number):
+    bigger_number = frist_number if frist_number>second_number else second_number
+    while bigger_number :
+       if frist_number%bigger_number==0 and second_number%bigger_number==0:
+           return bigger_number
+       bigger_number-=1
+
+hcf(int(input("Enter two Number:  ")),int(input()))
