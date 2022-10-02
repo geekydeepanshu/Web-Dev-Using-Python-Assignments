@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Embedding Python Program Into HTML</title>
+</head>
+<body>
+    <div>
+        <h1>
+            Swap Two Numbers
+        </h1>
+    </div>
+    <div>
+        <p>
+            def number_input():<br>
+            try:<br>
+                &nbsp;&nbsp;&nbsp;first_number=int(input("Enter First Numbers: "))<br>
+                &nbsp;&nbsp;&nbsp;second_number=int(input("Enter Second Numbers: "))<br>
+                &nbsp;&nbsp;&nbsp;return (first_number,second_number)<br>
+            except Exception:<br>
+                &nbsp;&nbsp;&nbsp;print("\nEnter Numbers Only !\n")<br>
+                &nbsp;&nbsp;&nbsp;return number_input() <br>   
+        
+        
+        first_number,second_number=number_input()<br>
+        first_number,second_number=second_number,first_number<br>
+        print("After Swapping........\nFirst Number is {} and Second Number is {}".format(first_number,second_number))<br>
+    </p>
+    </div>
+</body>
+</html>
